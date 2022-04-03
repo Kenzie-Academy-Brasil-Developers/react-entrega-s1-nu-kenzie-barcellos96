@@ -1,0 +1,135 @@
+.title {
+  display: flex;
+  position: absolute;
+  width: 35%;
+
+  margin-left: 43%;
+
+  align-items: center;
+  margin-top: 39px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+
+  color: #212529;
+}
+
+.section-buttons {
+  display: flex;
+  position: absolute;
+  width: 20%;
+  margin-left: 60%;
+  padding-right: 20px;
+
+  align-items: center;
+  margin-top: 33px;
+  justify-content: space-evenly;
+}
+
+.buttons {
+  align-items: center;
+  padding: 15px;
+
+  background: #e9ecef;
+  border: 1px solid #e9ecef;
+  box-sizing: border-box;
+  border-radius: 8px;
+  outline: none;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+
+  text-align: center;
+
+  color: #868e96;
+}
+
+.buttons:hover,
+.buttons:focus {
+  cursor: pointer;
+  background: #fd377e;
+
+  border: none;
+
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1750px) {
+  .section-buttons {
+    margin-left: 63%;
+  }
+
+  .title {
+    margin-left: 46%;
+  }
+}
+@media only screen and (max-width: 1650px) {
+  .section-buttons {
+    margin-left: 64.5%;
+  }
+
+  .title {
+    margin-left: 48%;
+  }
+}
+@media only screen and (max-width: 1550px) {
+  .section-buttons {
+    margin-left: 66%;
+  }
+
+  .title {
+    margin-left: 50%;
+  }
+}
+@media only screen and (max-width: 1450px) {
+  .section-buttons {
+    margin-left: 68%;
+  }
+
+  .title {
+    margin-left: 52%;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .section-buttons {
+    margin-left: 70%;
+  }
+
+  .buttons {
+    padding: 10px;
+  }
+  .title {
+    margin-left: 54%;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .section-buttons {
+    margin-top: 40px;
+    margin-left: 72%;
+  }
+  .buttons {
+    padding: 7px;
+  }
+  .title {
+    margin-left: 56%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .section-buttons {
+    margin-left: 76%;
+  }
+  .buttons {
+    padding: 7px;
+  }
+  .title {
+    margin-left: 60%;
+  }
+}

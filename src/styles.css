@@ -1,0 +1,42 @@
+.noTransactions {
+  display: flex;
+  width: 35%;
+  margin-left: 43%;
+  margin-top: -410px;
+}
+
+@media only screen and (max-width: 1750px) {
+  .noTransactions {
+    margin-left: 46%;
+  }
+}
+@media only screen and (max-width: 1650px) {
+  .noTransactions {
+    margin-left: 48%;
+  }
+}
+@media only screen and (max-width: 1550px) {
+  .noTransactions {
+    margin-left: 50%;
+  }
+}
+@media only screen and (max-width: 1450px) {
+  .noTransactions {
+    margin-left: 52%;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .noTransactions {
+    margin-left: 54%;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .noTransactions {
+    margin-left: 56%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .noTransactions {
+    margin-left: 60%;
+  }
+}

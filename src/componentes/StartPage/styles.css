@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  background-color: #212529;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.section-button {
+  justify-content: start;
+  margin-right: 50px;
+}
+
+.button-start {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 20px;
+
+  width: 241px;
+  height: 48px;
+
+  background: #fd377e;
+
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+
+  border: 2px solid #fd377e;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.button-start:hover {
+  cursor: pointer;
+  background-color: #e34981;
+}
+
+.slogan {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.title-start {
+  font-family: "Nunito";
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 48px;
+
+  width: 347px;
+  height: 144px;
+}
+
+@media (max-width: 1030px) {
+  .section-img {
+    display: none;
+  }
+}

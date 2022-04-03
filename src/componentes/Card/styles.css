@@ -1,0 +1,125 @@
+.container-card {
+  display: flex;
+  height: 100px;
+  width: 35%;
+  margin-left: 43%;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  background: #f8f9fa;
+  border-radius: 4px;
+  border-left: 3px solid #03b898;
+}
+
+.container-card-withdraw {
+  display: flex;
+  height: 100px;
+  width: 35%;
+  margin-left: 43%;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  background: #f8f9fa;
+  border-radius: 4px;
+  border-left: 3px solid #e9ecef;
+}
+
+.container-card:nth-child(2),
+.container-card-withdraw:nth-child(2) {
+  margin-top: -410px;
+}
+
+.description-card {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #212529;
+}
+
+.type-card {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  /* or 183% */
+
+  /* grey-3 */
+
+  color: #868e96;
+}
+
+.type-description {
+  margin-left: 20px;
+}
+
+.img-trash {
+  height: 22px;
+  width: 22px;
+  cursor: pointer;
+}
+
+.value-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  height: 20px;
+  width: 140px;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #212529;
+}
+
+@media only screen and (max-width: 1750px) {
+  .container-card,
+  .container-card-withdraw {
+    margin-left: 46%;
+  }
+}
+@media only screen and (max-width: 1650px) {
+  .container-card,
+  .container-card-withdraw {
+    margin-left: 48%;
+  }
+}
+@media only screen and (max-width: 1550px) {
+  .container-card,
+  .container-card-withdraw {
+    margin-left: 50%;
+  }
+
+  .container-list button:nth-child(2) {
+    margin-left: 40%;
+  }
+}
+@media only screen and (max-width: 1450px) {
+  .container-card,
+  .container-card-withdraw {
+    margin-left: 52%;
+  }
+
+  .container-list button:nth-child(2) {
+    margin-left: 35%;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .container-card,
+  .container-card-withdraw {
+    margin-left: 54%;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .container-card,
+  .container-card-withdraw {
+    margin-left: 56%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .container-card,
+  .container-card-withdraw {
+    margin-left: 60%;
+  }
+}
