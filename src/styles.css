@@ -2,41 +2,64 @@
   display: flex;
   width: 35%;
   margin-left: 43%;
+  margin-top: -340px;
+}
+
+.title-noTransactions {
+  display: flex;
+  position: absolute;
+  width: 35%;
+  margin-left: 43%;
   margin-top: -410px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+
+  color: #868e96;
 }
 
 @media only screen and (max-width: 1750px) {
-  .noTransactions {
+  .noTransactions,
+  .title-noTransactions {
     margin-left: 46%;
   }
 }
 @media only screen and (max-width: 1650px) {
-  .noTransactions {
+  .noTransactions,
+  .title-noTransactions {
     margin-left: 48%;
   }
 }
 @media only screen and (max-width: 1550px) {
-  .noTransactions {
+  .noTransactions,
+  .title-noTransactions {
     margin-left: 50%;
   }
 }
 @media only screen and (max-width: 1450px) {
-  .noTransactions {
+  .noTransactions,
+  .title-noTransactions {
     margin-left: 52%;
   }
 }
 @media only screen and (max-width: 1350px) {
-  .noTransactions {
+  .noTransactions,
+  .title-noTransactions {
     margin-left: 54%;
   }
 }
 @media only screen and (max-width: 1150px) {
-  .noTransactions {
+  .noTransactions,
+  .title-noTransactions {
     margin-left: 56%;
   }
 }
 @media only screen and (max-width: 1000px) {
-  .noTransactions {
+  .noTransactions,
+  .title-noTransactions {
     margin-left: 60%;
   }
 }

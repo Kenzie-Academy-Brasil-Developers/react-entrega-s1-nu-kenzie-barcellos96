@@ -4,7 +4,13 @@ import { useState } from "react";
 import TotalMoney from "../TotalMoney";
 import ButtonsFilter from "../ButtonsFilter";
 
-function Form({ setIsLoggedIn, listTransactions, setListTransactions }) {
+function Form({
+  setIsLoggedIn,
+  listTransactions,
+  setListTransactions,
+  listFilterTransactions,
+  setListFilterTransactions,
+}) {
   const [description, setDescription] = useState("");
   const [value, setValue] = useState("");
   const [type, setType] = useState("Entrada");
@@ -28,8 +34,7 @@ function Form({ setIsLoggedIn, listTransactions, setListTransactions }) {
       return transactions.type === "Saida";
     });
 
-    console.log(depositTransactions);
-    return setListTransactions(depositTransactions);
+    return setListFilterTransactions(depositTransactions);
   }
 
   function handleWithdraw() {
@@ -37,14 +42,15 @@ function Form({ setIsLoggedIn, listTransactions, setListTransactions }) {
       return transactions.type === "Entrada";
     });
 
-    return setListTransactions(withdrawTransactions);
+    return setListFilterTransactions(withdrawTransactions);
   }
 
   function handleAll() {
     const allTransactions = listTransactions.filter((transactions) => {
       return transactions.type === "Saida" || transactions.type === "Entrada";
     });
-    console.log(allTransactions);
+
+    setListFilterTransactions([]);
     return setListTransactions(allTransactions);
   }
 

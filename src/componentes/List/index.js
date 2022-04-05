@@ -1,4 +1,3 @@
-import "./styles.css";
 import Card from "../Card";
 
 function List({ listTransactions }) {

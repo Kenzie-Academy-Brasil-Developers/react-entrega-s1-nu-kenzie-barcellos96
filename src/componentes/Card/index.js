@@ -1,7 +1,7 @@
 import "./styles.css";
 import imgTrash from "../../assets/ButtonTrash.png";
 
-function Card({ transaction }) {
+function Card({ transaction, remove }) {
   return (
     <section
       className={

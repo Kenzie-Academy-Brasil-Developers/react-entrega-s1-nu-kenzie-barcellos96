@@ -1,12 +1,19 @@
+import "./styles.css";
 import { useState } from "react";
+
+import NoTransactions from "../src/assets/NoTransactions.png";
 import StartPage from "./componentes/StartPage";
+
 import Form from "./componentes/Form";
 import List from "./componentes/List";
-import "./styles.css";
-import NoTransactions from "../src/assets/NoTransactions.png";
 
 function App() {
   const [listTransactions, setListTransactions] = useState([]);
+
+  console.log(listTransactions);
+
+  const [listFilterTransactions, setListFilterTrasactions] =
+    useState(listTransactions);
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -18,11 +25,29 @@ function App() {
             setIsLoggedIn={setIsLoggedIn}
             listTransactions={listTransactions}
             setListTransactions={setListTransactions}
+            listFilterTransactions={listFilterTransactions}
+            setListFilterTransactions={setListFilterTrasactions}
           />
+
           {listTransactions[0] === undefined ? (
-            <img src={NoTransactions} alt="teste" className="noTransactions" />
+            <>
+              <h1 className="title-noTransactions">
+                Você ainda não possuí nenhum lançamento
+              </h1>
+              <img
+                src={NoTransactions}
+                alt="noTransactions-img"
+                className="noTransactions"
+              />
+            </>
           ) : (
-            <List listTransactions={listTransactions} />
+            <List
+              listTransactions={
+                listFilterTransactions.length > 0
+                  ? listFilterTransactions
+                  : listTransactions
+              }
+            />
           )}
         </>
       ) : (
